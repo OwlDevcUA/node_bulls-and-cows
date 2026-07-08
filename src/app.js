@@ -1,10 +1,10 @@
 /* eslint-disable no-console */
 'use strict';
 
-import readline from 'readline/promises';
-import { generateRandomNumber } from './modules/generateRandomNumber.js';
-import { checkIsValidUserInput } from './modules/checkIsValidUserInput.js';
-import { getBullsAndCows } from './modules/getBullsAndCows.js';
+const { readline } = require('readline/promises');
+const { generateRandomNumber } = require('./modules/generateRandomNumber.js');
+const { checkIsValidUserInput } = require('./modules/checkIsValidUserInput.js');
+const { getBullsAndCows } = require('./modules/getBullsAndCows.js');
 
 const rl = readline.createInterface({
   input: process.stdin,
